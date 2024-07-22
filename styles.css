@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #0a0a23;
+    padding: 1.5rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 70rem;
+}
+
+.logo {
+    width: 26rem;
+    margin-bottom: 3rem;
+}
+
+#title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#palindrome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 45rem;
+    min-height: 10rem;
+    background: #FFFFFF;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 0.5rem 0.1rem rgb(65, 0, 227);
+    margin: 1rem 0;
+    padding: 2rem;
+}
+
+label {
+    font-size: 1.6rem;
+    color: #0a0a23;
+    background: #FFFFFF;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#text-input {
+    height: 3.2rem;
+    width: 25rem;
+    font-size: 1.8rem;
+    color: #0a0a23;
+    background: #FFFFFF;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: none;
+    border-bottom: 0.2rem solid #5a01a7;
+}
+
+#text-input:focus {
+    outline: none;
+}
+
+#text-input::placeholder {
+    color: #8080a4;
+}
+
+#check-btn {
+    width: 9rem;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    background: #5a01a7;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+}
+
+#check-btn:hover {
+    background: #3a006d;
+}
+
+#result {
+    display: none;
+    color: #0a0a23;
+    font-size: 2rem;
+}
+
+#result strong {
+    font-size: 2rem;
+}
+
+.palindrome-definition {
+    max-width: 45rem;
+    color: #FFFFFF;
+    background: #00471b;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.palindrome-definition p {
+    font-size: 2rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.palindrome-definition p i,
+.palindrome-definition p span {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    #title {
+        font-size: 3.2rem;
+    }
+    #text-input {
+        width: 100%;
+    }
+    #check-btn {
+        display: inline-block;
+        width: 100%;
+        padding: 1.8rem;
+        margin-top: 1.5rem;
+    }
+
+    #result {
+        margin-top: 2rem;
+    }
+}
